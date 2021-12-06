@@ -35,7 +35,7 @@ Method convert(amount)
 | 0.05                                   | ["5p"]                                                                       | retuns 1 coin in exact amount in pence   |
 | 40                                     | ["£20", "£20"]                                                               | returns 2 notes in pounds only           |
 | 0.40                                   | ["20p", "20p"]                                                               | returns 2 coins in pence only            |
-| 7.42                                   | ["£5", "£1", "£1", "20p", "20p", "2p"]                                       |                                          |
+| 7.42                                   | ["£5", "£1", "£1", "20p", "20p", "2p"]                                       | returns notes and coins                  |
 | 16.30                                  | ["£10", "£5", "£1", "20p", "10p"]                                            |                                          |
 | 19.99                                  | ["£10", "£5", "£1", "£1", "£1", "£1", "50p", "20p", "20p", "5p", "2p", "2p"] |                                          |
 | 76.81                                  | ["£50", "£20", "£5", "£1", "50p", "20p", "10p", "1p"]                        |                                          |

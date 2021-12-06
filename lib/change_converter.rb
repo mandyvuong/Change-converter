@@ -1,4 +1,3 @@
-# frozen string literal comment.
 class ChangeConverter
   def conversion_unit
     {
@@ -6,7 +5,7 @@ class ChangeConverter
       2000 => '£20',
       1000 => '£10',
       500 => '£5',
-      200 => '£2',
+      # 200 => '£2',
       100 => '£1',
       50 => '50p',
       20 => '20p',
@@ -27,9 +26,12 @@ class ChangeConverter
           change << value
           i += 1
         end
-        amount -= key * (amount/key)
+        p amount/ key
+        amount -= key * (amount.to_i/key)
+        p amount
       end
     end
+
     change
   end
 end
