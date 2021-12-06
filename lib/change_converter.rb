@@ -26,10 +26,7 @@ class ChangeConverter
           change << value
           i += 1
         end
-        p amount.to_i
-        p amount.to_i/ key
-        amount -= key * (amount.to_i/key).floor
-        p amount
+        amount -= key * (amount/key)
       end
     end
     change
