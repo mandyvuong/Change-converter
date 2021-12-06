@@ -7,4 +7,7 @@ describe ChangeConverter do
   it 'retuns 1 coin in exact amount in pence' do
     expect(subject.convert(0.05)).to eq ['5p']
   end
+  it 'returns 2 notes in pounds only' do
+    expect(subject.convert(40)).to eq ["£20", "£20"]
+  end
 end

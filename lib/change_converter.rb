@@ -22,8 +22,12 @@ class ChangeConverter
     change = []
     conversion_unit.each do |key, value|
       if amount / key >= 1
-        change << value
-        amount -= key
+        i = 1
+        while i <= amount/key
+          change << value
+          i += 1
+        end
+        amount -= key * (amount/key)
       end
     end
     change
