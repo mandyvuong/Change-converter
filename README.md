@@ -39,3 +39,9 @@ Method convert(amount)
 | 16.30                                  | ["£10", "£5", "£1", "20p", "10p"]                                            |                                          |
 | 19.99                                  | ["£10", "£5", "£1", "£1", "£1", "£1", "50p", "20p", "20p", "5p", "2p", "2p"] |                                          |
 | 76.81                                  | ["£50", "£20", "£5", "£1", "50p", "20p", "10p", "1p"]                        |                                          |
+
+## Notes
+
+This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshops challenges.
+
+This challenge is in progress as I need to refactor

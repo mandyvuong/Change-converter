@@ -1,21 +1,4 @@
 class ChangeConverter
-  def conversion_unit
-    {
-      5000 => '£50',
-      2000 => '£20',
-      1000 => '£10',
-      500 => '£5',
-      # 200 => '£2',
-      100 => '£1',
-      50 => '50p',
-      20 => '20p',
-      10 => '10p',
-      5 => '5p',
-      2 => '2p',
-      1 => '1p'
-    }
-  end
-
   def convert(amount)
     amount = (amount * 100).ceil
     change = []
@@ -31,4 +14,23 @@ class ChangeConverter
     end
     change
   end
+
+  private
+
+  def conversion_unit
+    {
+      5000 => '£50',
+      2000 => '£20',
+      1000 => '£10',
+      500 => '£5',
+      100 => '£1',
+      50 => '50p',
+      20 => '20p',
+      10 => '10p',
+      5 => '5p',
+      2 => '2p',
+      1 => '1p'
+    }
+  end
+  
 end
