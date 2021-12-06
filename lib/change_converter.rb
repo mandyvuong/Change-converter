@@ -1,21 +1,29 @@
 class ChangeConverter
+
+  def initialize
+    @change = []
+  end
+
   def convert(amount)
-    amount = (amount * 100).ceil
-    change = []
-    conversion_unit.each do |key, value|
-      if amount / key >= 1
-        i = 1
-        while i <= amount/key
-          change << value
-          i += 1
-        end
-        amount -= key * (amount/key)
-      end
-    end
-    change
+    calculate(amount)
+    @change
   end
 
   private
+
+  def calculate(amount)
+    amount = (amount * 100).ceil
+    conversion_unit.each do |key, value|
+      if amount / key >= 1
+        i = 1
+        while i <= amount / key
+          @change << value
+          i += 1
+        end
+        amount -= key * (amount / key)
+      end
+    end
+  end
 
   def conversion_unit
     {
@@ -32,5 +40,4 @@ class ChangeConverter
       1 => '1p'
     }
   end
-  
 end
