@@ -1,5 +1,5 @@
 class Change_converter
   def convert(amount)
-    ["£%.0f" % amount]
+    amount > 1 ? ["£%.0f" % amount] : ["%.0fp" % (amount*100)]
   end
 end
