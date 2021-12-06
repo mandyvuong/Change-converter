@@ -1,10 +1,7 @@
 class ChangeConverter
 
-  def initialize
-    @change = []
-  end
-
   def convert(amount)
+    @change = []
     calculate(amount)
     @change
   end
