@@ -19,4 +19,7 @@ describe ChangeConverter do
   it 'returns notes and coins - another test to check output is correct' do
     expect(subject.convert(16.30)).to eq ["£10", "£5", "£1", "20p", "10p"]
   end
+  it 'returns notes and coins - another test to check output is correct' do
+    expect(subject.convert(19.99)).to eq ["£10", "£5", "£1", "£1", "£1", "£1", "50p", "20p", "20p", "5p", "2p", "2p"]
+  end
 end

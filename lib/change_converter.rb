@@ -17,7 +17,7 @@ class ChangeConverter
   end
 
   def convert(amount)
-    amount *= 100
+    amount = (amount * 100).ceil
     change = []
     conversion_unit.each do |key, value|
       if amount / key >= 1
@@ -26,12 +26,12 @@ class ChangeConverter
           change << value
           i += 1
         end
-        p amount/ key
-        amount -= key * (amount.to_i/key)
+        p amount.to_i
+        p amount.to_i/ key
+        amount -= key * (amount.to_i/key).floor
         p amount
       end
     end
-
     change
   end
 end
