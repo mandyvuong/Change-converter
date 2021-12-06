@@ -1,0 +1,17 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/amandavuong/Dropbox/projects/postcourse/ruby/process_workshops/change_converter/spec/change_converter_spec.rb": {
+        "lines": [
+          1
+        ]
+      },
+      "/Users/amandavuong/Dropbox/projects/postcourse/ruby/process_workshops/change_converter/lib/change_converter.rb": {
+        "lines": [
+
+        ]
+      }
+    },
+    "timestamp": 1638777790
+  }
+}
