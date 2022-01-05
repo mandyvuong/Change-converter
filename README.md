@@ -17,8 +17,6 @@ change_generator.convert(76.81)
  => ["£50", "£20", "£5", "£1", "50p", "20p", "10p", "1p"]
 ```
 
-## Plan
-
 **Notes and coins**
 
 - Notes: 50, 20, 10, 5, 2, 1
